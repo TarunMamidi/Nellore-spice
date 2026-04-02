@@ -114,6 +114,7 @@
         border-radius: 0;
         padding: 0 15px;
         height: 70px;
+        margin: 5%;
     }
 
     .menu-icon {
@@ -168,6 +169,7 @@
     .ic {
         font-size: 20px;
     }
+    margin: 5%;
 }
 
 /* ===== ENTRY ANIMATION ===== */
