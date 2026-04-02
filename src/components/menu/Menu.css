@@ -1,0 +1,131 @@
+/* ===== SECTION ===== */
+.menu-section {
+  padding: 100px 10%;
+  background: linear-gradient(180deg, #0d0000, #2b0000);
+  color: white;
+  min-height: 100vh;
+}
+
+/* ===== TITLE ===== */
+.menu-title {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 60px;
+  letter-spacing: 3px;
+  color: #FFD700;
+  text-shadow: 0 0 15px rgba(255, 200, 0, 0.6);
+}
+
+/* ===== GRID ===== */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 35px;
+}
+
+/* ===== CARD ===== */
+.menu-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  overflow: hidden;
+
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+/* ===== IMAGE ===== */
+.menu-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+/* ===== SPICY BADGE ===== */
+.spicy-badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: linear-gradient(45deg, red, orange);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+}
+
+/* ===== CONTENT ===== */
+.menu-content {
+  padding: 20px;
+}
+
+.menu-content h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+/* ===== PRICE ===== */
+.price {
+  color: #FFD700;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* ===== BUTTON ===== */
+.cart-btn {
+  background: linear-gradient(45deg, #ff0000, #ff9900);
+  border: none;
+  padding: 12px 22px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  color: white;
+
+  transition: all 0.3s ease;
+}
+
+/* ===== HOVER EFFECTS ===== */
+.menu-card:hover {
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 0 40px rgba(255, 0, 0, 0.6);
+}
+
+.menu-card:hover img {
+  transform: scale(1.15);
+}
+
+.cart-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 15px rgba(255, 100, 0, 0.8);
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .menu-section {
+    padding: 80px 5%;
+  }
+
+  .menu-title {
+    font-size: 30px;
+  }
+
+  .menu-card img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-title {
+    font-size: 24px;
+  }
+
+  .menu-card img {
+    height: 160px;
+  }
+}
